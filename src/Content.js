@@ -1,4 +1,5 @@
 import React from 'react';
+import Tip from './Tip.js';
 
 
 export default class Content extends React.Component {     render() {
@@ -12,21 +13,20 @@ export default class Content extends React.Component {     render() {
             //si es con llaves --> es para poner el dato/accion en este caso seria el nº de la pregunta y la pregunta
 
 
-            <div>
+            <div className={"cuerpo"}>
                 <input type="image" src={this.props.question.attachment.url} width="400" heigth="400"/>
                 <p> Question {this.props.currentQuestion+1}: {this.props.question.question}</p>
                 <input type="text" value={this.props.question.userAnswer || ""} onChange={(e) => {
                     this.props.onQuestionAnswer(e.target.value);
                 }}/>
-                <div>Tips:
-                    {this.props.question.tips.length === 0 ?
-                        <p>{"No tips"}</p> : this.props.question.tips.map(function (t) {
-                            return <p>{t}</p>;
-                        })}
-                </div>
+
+            <div>
+            <Tip tip ={this.props.tip}/>
             </div>
+                /*SERIA ALGO ASIIII !!!!!!!!!
+
 //En tips : preguntas si la longitud de las pista en una cuestion es cero, el primer parametro antes de cero te dice que no hay tips
 //pero el segundo parametro despues de : te dice que si no es igual a cero te haga un MAP
             //la funcion map recorre un array
         );
-    }}}
+

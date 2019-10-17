@@ -53,7 +53,7 @@ import Navbar from "./Navbar";
        function App(props){
             return (
                 <div className="App">
-
+                    <Navbar/>
                 
                 <Game currentQuestion={props.currentQuestion}
                       lengthQuestions={props.questions.length}

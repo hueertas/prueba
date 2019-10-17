@@ -1,13 +1,16 @@
 .App {
   text-align: center;
+  background-color: #DDFFDD;
+  height: 100%;
 }
 
 .App-logo {
   height: 40vmin;
+
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffe0eb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +22,89 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+
+.bSubmit{
+  background-color: #ffb2ba;
+  text-align: center;
+  width: 120px;
+  height: 45px;
+  border-color: black;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Consolas";
+  font-size: 15px;
+  color: #0a0a0a}
+
+.bNext{
+  background-color: #ffb2ba;
+  text-align: center;
+  width: 120px;
+  height: 45px;
+  border-color: black;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-family: "Consolas";
+  font-size: 15px;
+  color: #0a0a0a}
+
+.bPrevious{
+  text-align: center;
+  background-color: #ffb2ba;
+  width: 120px;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: black;
+  border-radius: 6px;
+  font-family: "Consolas";
+  font-size: 15px;
+  color: #0a0a0a}
+
+.bReset{
+  text-align: center;
+  background-color: #ffff00;
+  width: 60px;
+  height: 30px;
+  border-color: black;
+  border-radius: 3px;
+  margin: 0 0 6px 0;
+  padding: 0 0 0 2px;
+  font-family: "Consolas";
+  font-size: 15px;
+  ﬂoat: right;
+  color: #0a0a0a}
+
+.titulo{
+  width:100%;
+  text-align: center;
+  font-family: "Consolas";
+  font-size: 40px;
+  color: #0a0a0a;
+  background-color: #ffb2ba;
+  marin: 10px 0 20px;
+  line-height: 60px;
+  font-wight:normal;
+  text-trasform:uppercase;
+
+}
+
+.score{
+  font-size: 40px;}
+
+.congrats{
+  font-family: "Consolas";
+  font-size: 35px;}
+
+.resultado{
+  font-family: "Consolas";
+  font-size: 40px;
+  color: #282c34;}
+
+.cuerpo{
+  text-align: center;
 }
